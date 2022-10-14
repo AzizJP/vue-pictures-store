@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Banki.shop</title>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="page">
+        <div class="container">
+          <header class="header">
+            <nav class="menu">
+              <ul class="menu__list">
+                <a href="#" class="menu__item">Каталог</a>
+                <a href="#" class="menu__item">Доставка</a>
+                <a href="#" class="menu__item">Оплата</a>
+                <a href="#" class="menu__item">Контакты</a>
+                <a href="#" class="menu__item">О компании</a>
+              </ul>
+            </nav>
+            <form class="search">
+              <input type="text" class="search__input" />
+              <button type="submit" class="search__button">Найти</button>
+            </form>
+          </header>
+          <main class="main">
+            <h1 class="main__title">Картины эпохи возрождения</h1>
+            <section class="main__cards">
+              <Card></Card>
+              <!-- <article class="card main__card" v-for="card in cards">
+                <div class="main__card_image" :class="card.class"></div>
+                <h2 class="main__card_title">{{card.title}}</h2>
+                <div class="main__card_buy-section">
+                  <h3 class="main__card_price">{{card.price}}</h3>
+                  <button class="main__card_buy-button">Купить</button>
+                </div>
+              </article> -->
+            </section>
+          </main>
+          <footer class="footer">
+            <nav class="menu">
+              <ul class="menu__list">
+                <a href="#" class="menu__item menu__item_place_footer"
+                  >Каталог</a
+                >
+                <a href="#" class="menu__item menu__item_place_footer"
+                  >Доставка</a
+                >
+                <a href="#" class="menu__item menu__item_place_footer"
+                  >Оплата</a
+                >
+                <a href="#" class="menu__item menu__item_place_footer"
+                  >Контакты</a
+                >
+                <a href="#" class="menu__item menu__item_place_footer"
+                  >О компании</a
+                >
+              </ul>
+            </nav>
+            <address class="footer__contacts">
+              <a href="#" class="footer__phone"
+                ><div class="footer__phone-icon"></div>
+                +7 (812) 555-55-55</a
+              >
+              <a href="#" class="footer__address"
+                ><div class="footer__address-icon"></div>
+                г. Санкт-Петербург, ул. Ефимова, 3</a
+              >
+            </address>
+          </footer>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="../src/index.js"></script>
+  </body>
+</html>

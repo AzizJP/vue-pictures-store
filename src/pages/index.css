@@ -1,0 +1,20 @@
+.main__card_image {
+  width: 250px;
+  height: 150px;
+}
+
+.main__card_image_sandro {
+  background-image: url(../assets/Nascita-di-Venere.jpg);
+}
+
+.main__card_image_leonardo {
+  background-image: url(../assets/Ultima-cena.jpg);
+}
+
+.main__card_image_michelangelo {
+  background-image: url(../assets/La-creazione-di-Adamo.jpg);
+}
+
+.main__card_image_rembrandt {
+  background-image: url(../assets/The-Anatomy-Lesson.jpg);
+}

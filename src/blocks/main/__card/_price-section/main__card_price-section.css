@@ -1,0 +1,6 @@
+.main__card_price-section {
+  margin-left: 24px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}

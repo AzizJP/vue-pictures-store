@@ -1,0 +1,14 @@
+.wrapper {
+  margin: 8px auto;
+  display: flex;
+  justify-content: space-between;
+  max-width: 1216px;
+  flex-direction: column;
+}
+
+@media screen and (min-width: 980px) {
+  .wrapper {
+    flex-direction: row;
+    margin: 24px auto;
+  }
+}

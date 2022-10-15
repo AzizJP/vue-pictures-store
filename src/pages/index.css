@@ -1,20 +1,48 @@
-.main__card_image {
-  width: 250px;
-  height: 150px;
-}
+/*normalize*/
+@import url(../vendor/normalize.css);
 
-.main__card_image_sandro {
-  background-image: url(../assets/Nascita-di-Venere.jpg);
-}
+/*fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap');
 
-.main__card_image_leonardo {
-  background-image: url(../assets/Ultima-cena.jpg);
-}
+/*page*/
+@import url(../blocks/page/page.css);
+@import url(../blocks/container/container.css);
+@import url(../blocks/hidden/hidden.css);
+@import url(../blocks/wrapper/wrapper.css);
 
-.main__card_image_michelangelo {
-  background-image: url(../assets/La-creazione-di-Adamo.jpg);
-}
+/*header*/
+@import url(../blocks/header/header.css);
 
-.main__card_image_rembrandt {
-  background-image: url(../assets/The-Anatomy-Lesson.jpg);
-}
+/*navigation*/
+@import url(../blocks/menu/menu.css);
+@import url(../blocks/menu/__list/menu__list.css);
+@import url(../blocks/menu/__item/menu__item.css);
+
+/*search-form*/
+@import url(../blocks/search/search.css);
+@import url(../blocks/search/__input/search__input.css);
+@import url(../blocks/search/__button/search__button.css);
+
+/*main*/
+@import url(../blocks/main/main.css);
+@import url(../blocks/main/__title/main__title.css);
+@import url(../blocks/main/__cards/main__cards.css);
+@import url(../blocks/card/card.css);
+@import url(../blocks/main/__card/main__card.css);
+@import url(../blocks/main/__card/_disabled/main__card_disabled.css);
+@import url(../blocks/main/__card/_image/main__card_image.css);
+@import url(../blocks/main/__card/_title/main__card_title.css);
+@import url(../blocks/main/__card/_buy-section/main__card_buy-section.css);
+@import url(../blocks/main/__card/_price-section/main__card_price-section.css);
+@import url(../blocks/main/__card/_discount/main__card_discount.css);
+@import url(../blocks/main/__card/_price/main__card_price.css);
+@import url(../blocks/main/__card/_buy-button/main__card_buy-button.css);
+
+/*footer*/
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/menu/__footer/menu__footer.css);
+@import url(../blocks/footer/__contacts/footer__contacts.css);
+@import url(../blocks/footer/__contacts/_wrapper/footer__contacts_wrapper.css);
+@import url(../blocks/footer/__phone-icon/footer__phone-icon.css);
+@import url(../blocks/footer/__text/footer__text.css);
+@import url(../blocks/footer/__address-icon/footer__address-icon.css);

@@ -1,2 +1,7 @@
 .main__card_buy-section {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 48px;
 }

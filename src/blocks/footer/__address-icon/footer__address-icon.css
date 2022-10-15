@@ -1,2 +1,7 @@
 .footer__address-icon {
+  margin-right: 10px;
+  width: 10px;
+  height: 14px;
+  background-image: url(../../../assets/location.svg);
+  align-self: center;
 }

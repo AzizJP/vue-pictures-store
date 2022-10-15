@@ -6,8 +6,7 @@ const { createApp } = Vue;
 
 createApp({
   data() {
-    return {
-    };
+    return {};
   },
   components: {
     Card,

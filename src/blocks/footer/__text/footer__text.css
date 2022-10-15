@@ -1,0 +1,16 @@
+.footer__text {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  font-style: normal;
+  color: #555555;
+  display: flex;
+  align-self: center;
+}
+
+@media screen and (min-width: 980px) {
+  .wrapper {
+    font-size: 14px;
+    line-height: 21px;
+  }
+}

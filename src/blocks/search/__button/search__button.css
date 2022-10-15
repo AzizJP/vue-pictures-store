@@ -1,2 +1,28 @@
 .search__button {
+  margin: 0;
+  padding: 0;
+  width: 60px;
+  height: 48px;
+  background-color: #403432;
+  cursor: pointer;
+  transition: background-color linear 0.5s;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 980px) {
+  .search__button:hover {
+    background-color: #776763;
+    transition: background-color linear 0.2s;
+  }
+}
+
+@media screen and (min-width: 980px) {
+  .search__button {
+    font-size: 14px;
+    width: 122px;
+  }
 }

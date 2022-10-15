@@ -1,2 +1,8 @@
 .main__card_title {
+  margin: 20px 36px 22px 24px;
+  max-width: 220px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 27px;
+  color: #343030;
 }

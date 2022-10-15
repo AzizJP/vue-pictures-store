@@ -1,0 +1,9 @@
+.menu__footer {
+  margin-left: 40px;
+}
+
+@media screen and (min-width: 980px) {
+  .menu__footer {
+    margin-left: auto;
+  }
+}

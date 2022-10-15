@@ -1,0 +1,22 @@
+.footer__contacts_wrapper {
+  margin-left: 0px;
+  display: flex;
+  text-decoration: none;
+  transition: opacity linear 0.5s;
+}
+
+@media screen and (min-width: 980px) {
+  .footer__contacts_wrapper {
+    margin-left: 16px;
+  }
+  .footer__contacts_wrapper:hover {
+    opacity: 0.6;
+    transition: opacity linear 0.2s;
+  }
+}
+
+@media screen and (min-width: 1296px) {
+  .footer__contacts_wrapper {
+    margin-left: 54px;
+  }
+}

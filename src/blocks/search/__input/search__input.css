@@ -1,2 +1,29 @@
 .search__input {
+  margin: 0;
+  padding-left: 16px;
+  box-sizing: border-box;
+  background-clip: padding-box;
+  overflow: hidden;
+  width: 220px;
+  height: 48px;
+  border: 1px solid #e1e1e1;
+  font-size: 12px;
+  line-height: 21px;
+  color: #343030;
+}
+
+.search__input::placeholder {
+  color: #9f9f9f;
+}
+
+.search__input:focus {
+  outline: 0;
+  border: 1px solid #b5b5b5;
+}
+
+@media screen and (min-width: 980px) {
+  .search__input {
+    width: 294px;
+    font-size: 14px;
+  }
 }

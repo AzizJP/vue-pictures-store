@@ -1,2 +1,22 @@
 .main__card_buy-button {
+  display: block;
+  margin: 0 24px 0 0;
+  padding: 0;
+  width: 118px;
+  height: 48px;
+  background-color: #382e2b;
+  cursor: pointer;
+  transition: background-color linear 0.5s;
+  border: none;
+  color: #f4f6f9;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+}
+
+@media screen and (min-width: 980px) {
+  .main__card_buy-button:hover {
+    background-color: #776763;
+    transition: background-color linear 0.2s;
+  }
 }

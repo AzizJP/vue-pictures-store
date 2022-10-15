@@ -1,2 +1,7 @@
 .footer__phone-icon {
+  margin-right: 10px;
+  width: 14px;
+  height: 14px;
+  background-image: url(../../../assets/phone.svg);
+  align-self: center;
 }

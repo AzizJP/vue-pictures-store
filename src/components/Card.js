@@ -1,30 +1,24 @@
-import {
-  nascitaDiVenereCard,
-  laCreazioneDiAdamoCard,
-  ultimaCenaCard,
-  theAnatomyLessonCard,
-} from '../utils/data';
+import HeaderComponent from './HeaderComponent';
 
 export default {
-  data() {
-    return {
-      cards: [
-        nascitaDiVenereCard,
-        ultimaCenaCard,
-        laCreazioneDiAdamoCard,
-        theAnatomyLessonCard,
-      ],
-    };
+  props: ['cards', 'search'],
+  computed: {
+    searchHandler() {
+      return this.cards.filter((card) => card.title.includes(this.search));
+    },
   },
   methods: {
     buttonClickToggle(id) {
       this.cards[id].isInTheBasket = !this.cards[id].isInTheBasket;
     },
   },
-  template:
-  `<article
+  components: {
+    HeaderComponent,
+  },
+  template: `
+  <article
   class="card main__card"
-  v-for="(card, id) in cards"
+  v-for="(card, id) in searchHandler"
   >
   <div :class="[card.sale ? 'main__card_disabled' : '']"></div>
   <img class="main__card_image" :src="card.image"/>

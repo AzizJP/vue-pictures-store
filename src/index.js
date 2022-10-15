@@ -1,5 +1,5 @@
 import './pages/index.css';
-import Card from './components/Card';
+import App from './components/App';
 
 // eslint-disable-next-line no-undef
 const { createApp } = Vue;
@@ -9,6 +9,6 @@ createApp({
     return {};
   },
   components: {
-    Card,
+    App,
   },
 }).mount('#app');

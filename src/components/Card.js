@@ -14,7 +14,7 @@ export default {
     };
   },
   created() {
-    this.cards = Data;
+    this.cards = Data.cards;
   },
   computed: {
     searchHandler() {

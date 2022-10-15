@@ -1,8 +1,13 @@
+import Data from '../utils/data';
+
 export default {
   data() {
     return {
       search: '',
     };
+  },
+  created() {
+    this.search = Data.search;
   },
   methods: {
     viewInputValue() {

@@ -3,6 +3,8 @@ import adamo from '../assets/La-creazione-di-Adamo.jpg';
 import lesson from '../assets/The-Anatomy-Lesson.jpg';
 import cena from '../assets/Ultima-cena.jpg';
 
+const search = '';
+
 const cards = [
   {
     title: '«Рождение Венеры» Сандро Боттичелли',
@@ -42,4 +44,4 @@ const cards = [
   },
 ];
 
-export default cards;
+export default { cards, search };

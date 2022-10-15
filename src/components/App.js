@@ -1,23 +1,11 @@
 import FooterComponent from './FooterComponent';
 import HeaderComponent from './HeaderComponent';
 import Main from './Main';
-import {
-  nascitaDiVenereCard,
-  laCreazioneDiAdamoCard,
-  ultimaCenaCard,
-  theAnatomyLessonCard,
-} from '../utils/data';
 
 export default {
   data() {
     return {
       search: '',
-      cards: [
-        nascitaDiVenereCard,
-        ultimaCenaCard,
-        laCreazioneDiAdamoCard,
-        theAnatomyLessonCard,
-      ],
     };
   },
   components: {
@@ -25,8 +13,13 @@ export default {
     Main,
     FooterComponent,
   },
+  methods: {
+    viewInputValue(value) {
+      this.search = value;
+    },
+  },
   template:
-    `<Header-Component :search="search"></Header-Component>
-    <Main :cards="cards" :search="search"></Main>
+    `<Header-Component @viewInputValue="viewInputValue"></Header-Component>
+    <Main :search="search"></Main>
     <Footer-Component></Footer-Component>`,
 };

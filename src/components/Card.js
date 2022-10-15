@@ -1,19 +1,41 @@
 import HeaderComponent from './HeaderComponent';
+import Data from '../utils/data';
 
 export default {
-  props: ['cards', 'search'],
+  props: {
+    search: {
+      type: String,
+    },
+  },
+  data() {
+    return {
+      searchProps: this.search,
+      cards: [],
+    };
+  },
+  created() {
+    this.cards = Data;
+  },
   computed: {
     searchHandler() {
-      return this.cards.filter((card) => card.title.includes(this.search));
+      return this.cards.filter(
+        (card) => card.title.toLowerCase().includes(this.search.toLowerCase()),
+      );
     },
   },
   methods: {
     buttonClickToggle(id) {
       this.cards[id].isInTheBasket = !this.cards[id].isInTheBasket;
+      localStorage.setItem('cards', JSON.stringify(this.cards));
     },
+  },
+  mounted() {
+    const cardsOnLS = localStorage.getItem('cards');
+    this.cards = JSON.parse(cardsOnLS);
   },
   components: {
     HeaderComponent,
+    Data,
   },
   template: `
   <article

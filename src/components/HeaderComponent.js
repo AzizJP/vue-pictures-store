@@ -1,9 +1,13 @@
 import SearchComponent from './SearchComponent';
 
 export default {
-  props: ['search'],
   components: {
     SearchComponent,
+  },
+  methods: {
+    viewInputValue(value) {
+      this.$emit('viewInputValue', value);
+    },
   },
   template:
   `<header class="header">
@@ -17,7 +21,7 @@ export default {
         <a href="#" class="menu__item">О компании</a>
       </ul>
     </nav>
-    <Search-Component :search="search"></Search-Component>
+    <Search-Component @viewInputValue="viewInputValue"></Search-Component>
   </div>
 </header>`,
 };

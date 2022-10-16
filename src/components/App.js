@@ -19,7 +19,7 @@ export default {
     },
   },
   template:
-    `<Header-Component @viewInputValue="viewInputValue"></Header-Component>
-    <Main :search="search"></Main>
-    <Footer-Component></Footer-Component>`,
+    `<Header-Component @viewInputValue="viewInputValue" />
+    <Main :search="search" />
+    <Footer-Component />`,
 };

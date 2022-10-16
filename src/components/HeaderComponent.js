@@ -21,7 +21,7 @@ export default {
         <a href="#" class="menu__item">О компании</a>
       </ul>
     </nav>
-    <Search-Component @viewInputValue="viewInputValue"></Search-Component>
+    <Search-Component @viewInputValue="viewInputValue" />
   </div>
 </header>`,
 };

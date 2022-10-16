@@ -11,6 +11,7 @@ export default {
     return {
       searchProps: this.search,
       cards: [],
+      text: { id: '', value: '' },
     };
   },
   created() {
@@ -24,14 +25,26 @@ export default {
     },
   },
   methods: {
-    buttonClickToggle(id) {
-      this.cards[id].isInTheBasket = !this.cards[id].isInTheBasket;
+    async buttonClickToggle(id) {
+      if (this.cards[id].buttonValue === 'В корзине') {
+        this.cards[id].buttonValue = 'Купить';
+      } else if (this.cards[id].buttonValue === 'Купить') {
+        await this.delay(this.cards[id].buttonValue = 'Обрабатывается', 2000);
+        this.cards[id].buttonValue = 'В корзине';
+      }
       localStorage.setItem('cards', JSON.stringify(this.cards));
+    },
+    delay(foo, ms) {
+      return new Promise((resolve) => {
+        setTimeout(() => resolve(foo), ms);
+      });
     },
   },
   mounted() {
-    const cardsOnLS = localStorage.getItem('cards');
-    this.cards = JSON.parse(cardsOnLS);
+    if (localStorage.cards) {
+      const cardsOnLS = localStorage.getItem('cards');
+      this.cards = JSON.parse(cardsOnLS);
+    }
   },
   components: {
     HeaderComponent,
@@ -54,7 +67,7 @@ export default {
     class="hidden"
     :class="[card.sale ? '': 'main__card_buy-button']"
     @click="buttonClickToggle(id)"
-    >{{card.isInTheBasket ? '&#10003; В корзине' : 'Купить'}}</button>
+    >{{card.buttonValue}}</button>
   </div>
 </article>`,
 };

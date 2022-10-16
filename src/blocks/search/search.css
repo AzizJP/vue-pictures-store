@@ -9,3 +9,9 @@
     padding-right: 40px;
   }
 }
+
+@media screen and (min-width: 1296px) {
+  .search {
+    padding-right: 0px;
+  }
+}

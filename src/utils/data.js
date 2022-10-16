@@ -12,7 +12,7 @@ const cards = [
     isDiscount: true,
     price: '1 000 000 $',
     discount: '2 000 000 $',
-    isInTheBasket: false,
+    buttonValue: 'Купить',
     sale: false,
   },
   {
@@ -21,7 +21,7 @@ const cards = [
     isDiscount: false,
     discount: '',
     price: '3 000 000 $',
-    isInTheBasket: false,
+    buttonValue: 'Купить',
     sale: false,
   },
   {
@@ -30,7 +30,7 @@ const cards = [
     isDiscount: true,
     discount: '6 000 000 $',
     price: '5 000 000 $',
-    isInTheBasket: false,
+    buttonValue: 'Купить',
     sale: false,
   },
   {
@@ -39,7 +39,7 @@ const cards = [
     isDiscount: false,
     discount: '',
     price: '5 000 000 $',
-    isInTheBasket: false,
+    buttonValue: 'Купить',
     sale: true,
   },
 ];

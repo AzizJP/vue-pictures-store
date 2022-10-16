@@ -1,0 +1,10 @@
+.popup__slide-button_place_right {
+  right: 0;
+}
+
+@media screen and (min-width: 980px) {
+  .popup__slide-button_place_right:hover {
+    box-shadow: -15px 0 0 0 rgba(0, 0, 0, 0.3);
+    transition: all linear 0.2s;
+  }
+}

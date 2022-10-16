@@ -28,7 +28,7 @@ export default {
       if (this.cards[id].buttonValue === 'В корзине') {
         this.cards[id].buttonValue = 'Купить';
       } else if (this.cards[id].buttonValue === 'Купить') {
-        await this.delay(this.cards[id].buttonValue = 'Обрабатывается', 2000);
+        await this.delay(this.cards[id].buttonValue = 'Обработка', 2000);
         this.cards[id].buttonValue = 'В корзине';
       }
       localStorage.setItem('cards', JSON.stringify(this.cards));
@@ -60,7 +60,7 @@ export default {
   v-for="(card, id) in searchHandler"
   >
   <div :class="[card.sale ? 'main__card_disabled' : '']"></div>
-    <img class="main__card_image" :src="card.image" @click="openPopup(id), getCardById(id)"/>
+    <img class="main__card_image" :src="card.image[0]" @click="openPopup(id), getCardById(id)"/>
     <h2 class="main__card_title">{{card.title}}</h2>
   <div class="main__card_buy-section">
     <div class="main__card_price-section">
@@ -70,7 +70,7 @@ export default {
     <button
     class="hidden"
     :class="[card.sale ? '' : 'main__card_buy-button'],card.buttonValue === 'В корзине'&& ['main__card_buy-button_type_busket'],
-    card.buttonValue === 'Обрабатывается'&& ['main__card_buy-button_type_processed']"
+    card.buttonValue === 'Обработка'&& ['main__card_buy-button_type_processed']"
     @click="buttonClickToggle(id)"
     >
     <div

@@ -60,3 +60,8 @@
 @import url(../blocks/popup/__opened/popup__opened.css);
 @import url(../blocks/popup/__discount/popup__discount.css);
 @import url(../blocks/popup/__image/popup__image.css);
+@import url(../blocks/popup/__wrapper/popup__wrapper.css);
+@import url(../blocks/popup/__image/_wrapper/popup__image_wrapper.css);
+@import url(../blocks/popup/__slide-button/popup__slide-button.css);
+@import url(../blocks/popup/__slide-button/_place/popup__slide-button_place_left.css);
+@import url(../blocks/popup/__slide-button/_place/popup__slide-button_place_right.css);

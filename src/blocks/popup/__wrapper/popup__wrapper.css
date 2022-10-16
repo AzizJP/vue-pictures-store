@@ -1,0 +1,7 @@
+.popup__wrapper {
+  margin-bottom: 5%;
+  width: 90%;
+  overflow: hidden;
+  align-self: center;
+  position: relative;
+}

@@ -9,7 +9,6 @@ export default {
   },
   data() {
     return {
-      searchProps: this.search,
       cards: [],
       text: { id: '', value: '' },
     };
@@ -39,6 +38,12 @@ export default {
         setTimeout(() => resolve(foo), ms);
       });
     },
+    openPopup(id) {
+      this.cards[id].isPopupOpen = true;
+    },
+    getCardById(id) {
+      this.$emit('getCardById', this.cards[id]);
+    },
   },
   mounted() {
     if (localStorage.cards) {
@@ -48,7 +53,6 @@ export default {
   },
   components: {
     HeaderComponent,
-    Data,
   },
   template: `
   <article
@@ -56,8 +60,8 @@ export default {
   v-for="(card, id) in searchHandler"
   >
   <div :class="[card.sale ? 'main__card_disabled' : '']"></div>
-  <img class="main__card_image" :src="card.image"/>
-  <h2 class="main__card_title">{{card.title}}</h2>
+    <img class="main__card_image" :src="card.image" @click="openPopup(id), getCardById(id)"/>
+    <h2 class="main__card_title">{{card.title}}</h2>
   <div class="main__card_buy-section">
     <div class="main__card_price-section">
       <p class="hidden" :class="[card.isDiscount ? 'main__card_discount' : '']">{{card.discount}}</p>
@@ -65,9 +69,14 @@ export default {
     </div>
     <button
     class="hidden"
-    :class="[card.sale ? '': 'main__card_buy-button']"
+    :class="[card.sale ? '' : 'main__card_buy-button'],card.buttonValue === 'В корзине'&& ['main__card_buy-button_type_busket'],
+    card.buttonValue === 'Обрабатывается'&& ['main__card_buy-button_type_processed']"
     @click="buttonClickToggle(id)"
-    >{{card.buttonValue}}</button>
+    >
+    <div
+    class="hidden"
+    :class="card.buttonValue === 'В корзине'&& ['main__card_icon']"></div>
+    <p class="main__card_buy-button_type_text">{{card.buttonValue}}</p></button>
   </div>
 </article>`,
 };

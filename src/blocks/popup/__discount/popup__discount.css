@@ -1,0 +1,9 @@
+.popup__discount {
+  display: block;
+  margin: 0 0 6px 5%;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 21px;
+  text-decoration: line-through;
+  color: #a0a0a0;
+}

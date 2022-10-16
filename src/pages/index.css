@@ -37,6 +37,10 @@
 @import url(../blocks/main/__card/_discount/main__card_discount.css);
 @import url(../blocks/main/__card/_price/main__card_price.css);
 @import url(../blocks/main/__card/_buy-button/main__card_buy-button.css);
+@import url(../blocks/main/__card/_buy-button/_type/main__card_buy-button_type_busket);
+@import url(../blocks/main/__card/_buy-button/_type/main__card_buy-button_type_processed.css);
+@import url(../blocks/main/__card/_icon/main__card_icon.css);
+@import url(../blocks/main/__card/_buy-button/_type/main__card_buy-button_type_text.css);
 
 /*footer*/
 @import url(../blocks/footer/footer.css);
@@ -46,3 +50,13 @@
 @import url(../blocks/footer/__phone-icon/footer__phone-icon.css);
 @import url(../blocks/footer/__text/footer__text.css);
 @import url(../blocks/footer/__address-icon/footer__address-icon.css);
+
+/*popup*/
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/__container/popup__container.css);
+@import url(../blocks/popup/__close/popup__close.css);
+@import url(../blocks/popup/__title/popup__title.css);
+@import url(../blocks/popup/__price/popup__price.css);
+@import url(../blocks/popup/__opened/popup__opened.css);
+@import url(../blocks/popup/__discount/popup__discount.css);
+@import url(../blocks/popup/__image/popup__image.css);

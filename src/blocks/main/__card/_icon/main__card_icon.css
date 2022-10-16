@@ -1,0 +1,8 @@
+.main__card_icon {
+  display: block;
+  background: url('../../../../assets/chek-mark.svg') no-repeat center/cover;
+  width: 13px;
+  height: 13px;
+  margin: 0 7px 0 0;
+  color: white;
+}

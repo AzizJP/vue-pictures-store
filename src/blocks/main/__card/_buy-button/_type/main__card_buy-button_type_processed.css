@@ -1,0 +1,15 @@
+.main__card_buy-button_type_processed {
+  animation: gradient 2s linear;
+}
+
+@keyframes gradient {
+  from {
+    background-color: #403432;
+  }
+  50% {
+    background-color: #776763;
+  }
+  to {
+    background-color: #5b3a32;
+  }
+}

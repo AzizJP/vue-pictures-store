@@ -14,6 +14,7 @@ const cards = [
     discount: '2 000 000 $',
     buttonValue: 'Купить',
     sale: false,
+    isPopupOpen: false,
   },
   {
     title: '«Тайная вечеря»  Леонардо да Винчи',
@@ -23,6 +24,7 @@ const cards = [
     price: '3 000 000 $',
     buttonValue: 'Купить',
     sale: false,
+    isPopupOpen: false,
   },
   {
     title: '«Сотворение Адама» Микеланджело',
@@ -32,6 +34,7 @@ const cards = [
     price: '5 000 000 $',
     buttonValue: 'Купить',
     sale: false,
+    isPopupOpen: false,
   },
   {
     title: '«Урок анатомии»  Рембрандт',
@@ -41,6 +44,7 @@ const cards = [
     price: '5 000 000 $',
     buttonValue: 'Купить',
     sale: true,
+    isPopupOpen: false,
   },
 ];
 

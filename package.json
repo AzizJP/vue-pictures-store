@@ -2,6 +2,7 @@
   "name": "vue-banki-shop",
   "version": "1.0.0",
   "description": "VueJS pet project",
+  "homepage": "https://azizjp.github.io/vue-pictures-store/",
   "main": "app.js",
   "scripts": {
     "build": "rm -rf dist && webpack --mode production",

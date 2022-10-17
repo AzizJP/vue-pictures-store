@@ -7,6 +7,7 @@ export default {
       type: String,
     },
   },
+  emits: ['getCardById'],
   data() {
     return {
       cards: [],

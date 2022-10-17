@@ -42,8 +42,8 @@ export default {
         :style="{'margin-left': '-' + (100 * slideIndex) + '%'}">
           <img
           class="popup__image"
-          v-for="(image, id) in card.image"
-          :src="card.image[id]"/>
+          v-for="image in card.images"
+          :src="image"/>
         </div>
         <button
         class="popup__slide-button popup__slide-button_place_left"

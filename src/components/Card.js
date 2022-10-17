@@ -61,7 +61,7 @@ export default {
   v-for="(card, id) in searchHandler"
   >
   <div :class="[card.sale ? 'main__card_disabled' : '']"></div>
-    <img class="main__card_image" :src="card.image[0]" @click="openPopup(id), getCardById(id)"/>
+    <img class="main__card_image" :src="card.image" @click="openPopup(id), getCardById(id)"/>
     <h2 class="main__card_title">{{card.title}}</h2>
   <div class="main__card_buy-section">
     <div class="main__card_price-section">

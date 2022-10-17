@@ -14,7 +14,8 @@ const search = '';
 const cards = [
   {
     title: '«Рождение Венеры» Сандро Боттичелли',
-    image: [venere, venereScnd, venereThrd],
+    image: venere,
+    images: [venere, venereScnd, venereThrd],
     isDiscount: true,
     price: '1 000 000 $',
     discount: '2 000 000 $',
@@ -24,7 +25,8 @@ const cards = [
   },
   {
     title: '«Тайная вечеря»  Леонардо да Винчи',
-    image: [cena, cenaScnd, cenaThrd],
+    image: cena,
+    images: [cena, cenaScnd, cenaThrd],
     isDiscount: false,
     discount: '',
     price: '3 000 000 $',
@@ -34,7 +36,8 @@ const cards = [
   },
   {
     title: '«Сотворение Адама» Микеланджело',
-    image: [adamo, adamoScnd, adamoThrd],
+    image: adamo,
+    images: [adamo, adamoScnd, adamoThrd],
     isDiscount: true,
     discount: '6 000 000 $',
     price: '5 000 000 $',
@@ -44,7 +47,8 @@ const cards = [
   },
   {
     title: '«Урок анатомии»  Рембрандт',
-    image: [lesson, lesson, lesson],
+    image: lesson,
+    images: [lesson, lesson, lesson],
     isDiscount: false,
     discount: '',
     price: '5 000 000 $',
